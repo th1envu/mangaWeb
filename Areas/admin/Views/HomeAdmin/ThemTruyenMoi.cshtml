@@ -1,0 +1,75 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model WebTruyenTranh.Models.TblTruyen
+
+@{
+    ViewData["Title"] = "ThemTruyenMoi";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>ThemTruyenMoi</h1>
+
+<h4>TblTruyen</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="ThemTruyenMoi">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TenTruyen" class="control-label"></label>
+                <input asp-for="TenTruyen" class="form-control" />
+                <span asp-validation-for="TenTruyen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TacGia" class="control-label"></label>
+                <input asp-for="TacGia" class="form-control" />
+                <span asp-validation-for="TacGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnhDaiDien" class="control-label"></label>
+                <input asp-for="AnhDaiDien" class="form-control" />
+                <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TinhTrang" class="control-label"></label>
+                <input asp-for="TinhTrang" class="form-control" />
+                <span asp-validation-for="TinhTrang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdNguon" class="control-label"></label>
+                <select asp-for="IdNguon" class ="form-control" asp-items="ViewBag.IdNguon"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="MoTa" class="control-label"></label>
+                <input asp-for="MoTa" class="form-control" />
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayDang" class="control-label"></label>
+                <input asp-for="NgayDang" class="form-control" />
+                <span asp-validation-for="NgayDang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TheLoaiTruyen" class="control-label"></label>
+                <input asp-for="TheLoaiTruyen" class="form-control" />
+                <span asp-validation-for="TheLoaiTruyen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdNxb" class="control-label"></label>
+                <select asp-for="IdNxb" class ="form-control" asp-items="ViewBag.IdNxb"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdTheLoai" class="control-label"></label>
+                <input asp-for="IdTheLoai" class="form-control" />
+                <span asp-validation-for="IdTheLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

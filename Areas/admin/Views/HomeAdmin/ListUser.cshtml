@@ -1,0 +1,48 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<WebTruyenTranh.Models.TblUser>
+
+@{
+    ViewData["Title"] = "ListUser";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Danh sách người dùng</h1>
+
+<p>
+    <a asp-action="ThemUser">Thêm mới người dùng</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tài khoản
+            </th>
+            <th>
+                Mật khẩu
+            </th>
+            <th>
+                Quyền
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PassWord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAdmin)
+            </td>
+            <td>
+                <a asp-action="SuaUser" asp-route-username="@item.UserName">Edit</a> |
+                <a asp-action="XoaUser" asp-route-username="@item.UserName">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,54 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<WebTruyenTranh.Models.TblChuong>
+
+@{
+    ViewData["Title"] = "ListChuong";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Danh sách chương truyện</h1>
+
+<p>
+    <a asp-action="ThemChuongMoi">Thêm mới chương</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdChuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenChuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTruyen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChuongSo)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdChuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenChuong)
+            </td>
+            <td>
+                 @Html.DisplayFor(modelItem => item.IdTruyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChuongSo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "SuaChuong", new {  idchuong=item.IdChuong, idtruyen=item.IdTruyen, sochuong=item.ChuongSo  }) |
+                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                @Html.ActionLink("Delete", "XoaChuong", new {  idchuong=item.IdChuong  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

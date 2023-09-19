@@ -1,0 +1,101 @@
+﻿@model WebTruyenTranh.Models.TblTruyen
+@{
+    ViewData["Title"] = "ChiTietTruyen";
+    Layout = "~/Views/Shared/_LayoutChiTiet.cshtml";
+}
+
+<div class="container" style="padding-top:25px;color:black">
+    <h3>@Html.DisplayFor(model => model.TenTruyen)</h3>
+    <hr />
+    <dl class="row">
+        <div>
+            <img class="img-fluid w-100" src="@Url.Content("../assets/anhdaidien/"+Model.AnhDaiDien)" style="object-fit: cover;height:300px;width:205px!important">
+        </div>
+        <div style="padding-left:25px">
+            <dd class="col-sm-12">
+                Tác giả
+            </dd>
+            
+            <dd class="col-sm-12">
+                Tình trạng
+            </dd>
+            
+            <dd class="col-sm-12">
+                Ngày đăng
+            </dd>
+            
+            <dd class="col-sm-12">
+                Thể loại
+            </dd>
+            
+        </div>
+        <div style="padding-left:35px">
+            <dd id="idt" class="col-sm-12" style="display:none">
+                @Html.DisplayFor(model => model.IdTruyen)
+            </dd>
+            <dd class="col-sm-12">
+                @Html.DisplayFor(model => model.TacGia)
+            </dd>
+            <dd class="col-sm-12">
+                @Html.DisplayFor(model => model.TinhTrang)
+            </dd>
+            <dd class="col-sm-12">
+                @Html.DisplayFor(model => model.NgayDang)
+            </dd>
+            <dd class="col-sm-12">
+                @Html.DisplayFor(model => model.TheLoaiTruyen)
+            </dd>
+        </div>
+    </dl>
+    <div>
+        <h2 style="border-bottom:2px solid black;padding-bottom:5px">Nội dung</h2>
+        <p>Mở đầu câu truyện, cậu học sinh trung học 16 tuổi Shinichi Kudo bị biến thành cậu bé Conan Edogawa. Shinichi trong phần đầu của Thám tử lừng danh Conan được miêu tả là một thám tử học đường. Trong một lần đi chơi công viên "Miền Nhiệt đới" với cô bạn từ thuở nhỏ (cũng là bạn gái) Ran Mori , cậu bị dính vào vụ án một hành khách trên Chuyến tàu tốc hành trong công viên, Kishida , bị giết trong một vụ án cắt đầu rùng rợn. Cậu đã làm sáng tỏ vụ án và trên đường về nhà, chứng kiến một vụ làm ăn mờ ám của những người đàn ông mặc toàn đồ đen. Kudo bị phát hiện, bị đánh ngất sau đó những người đàn ông áo đen đã cho cậu uống một thứ thuốc độc chưa qua thử nghiệm là Apotoxin-4869 (APTX4869) với mục đích thủ tiêu cậu. Tuy nhiên chất độc đã không giết chết Kudo. Khi tỉnh lại, cậu bàng hoàng nhận thấy thân thể mình đã bị teo nhỏ trong hình dạng của một cậu học sinh tiểu học....</p>
+    </div>
+    <div>
+        <h2 style="border-bottom:2px solid black;padding-bottom:5px">Danh sách chương</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Số chương</th>
+                </tr>
+            </thead>
+            <tbody id="dschuong">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="../Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+     $(document).ready(function () {
+            danhSachChuong();
+     });
+    let id = document.getElementById("idt");
+    function danhSachChuong(){
+        $.ajax({
+            url: 'https://localhost:7254/api/dschuong?idtruyen=' + id.innerText,
+            method: 'GET',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("lỗi");
+            },
+            success: function (reponse) {
+                const len = reponse.length;
+                console.log(reponse);
+                let table = '';
+                for (var i = 0; i < len; ++i) {
+                    table = table + '<tr>';
+                    table = table + '<td> <a href="/home/chitietanh?machuong='+reponse[i].idChuong+'"> Chương số ' + reponse[i].chuongSo + '</a> </td>';
+                    table = table + '</tr>';
+                }
+
+                document.getElementById('dschuong').innerHTML = table;
+            }
+        });
+    }
+</script>
+@*<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdTruyen">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>*@

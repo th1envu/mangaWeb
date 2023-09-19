@@ -1,0 +1,108 @@
+﻿@using WebTruyenTranh.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<TblTruyen>
+@{
+    ViewData["Title"] = "ListTruyen";
+    Layout = "~/Areas/admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<h1>Danh sách truyện</h1>
+
+<p>
+    <a asp-action="ThemTruyenMoi">Thêm truyện</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                Tên truyện
+            </th>
+            <th>
+                Tác giả
+            </th>
+            <th>
+                Tình trạng
+            </th>
+            <th>
+                Nội dung
+            </th>
+            <th>
+                Ngày đăng
+            </th>
+            <th>
+                Thể loại truyện
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="truyen">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTruyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenTruyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TacGia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TinhTrang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TheLoaiTruyen)
+            </td>
+            <td>
+                <a asp-action="SuaTruyen" asp-route-idtruyen="@item.IdTruyen">Edit</a> |
+                @*<a asp-action="Details" asp-route-id="@item.IdTruyen">Details</a> |*@
+                <a asp-action="XoaTruyen" asp-route-idtruyen="@item.IdTruyen">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    @Html.PagedListPager(Model, page=>Url.Action("listtruyen", new{page=page}))
+</div>
+<script type="text/javascript" src="../Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    let id = document.getElementById("idt");
+    function timTruyen() {
+        $.ajax({
+            url: 'https://localhost:7254/api/timtruyen?tentruyen=' + $("#search").val(),
+            method: 'GET',
+            contentType: 'json',
+            dataType: 'json',
+            error: function (response) {
+                alert("lỗi");
+            },
+            success: function (reponse) {
+                const len = reponse.length;
+                console.log(reponse);
+                let table = '';
+                for (var i = 0; i < len; ++i) {
+                    table = table + '<tr>';
+                    table = table + '<td>' + reponse[i].tenTruyen + '</td>';
+                    table = table + '<td>' + reponse[i].tacGia + '</td>';
+                    table = table + '<td>' + reponse[i].tinhTrang + '</td>';
+                    table = table + '<td>' + reponse[i].moTa + '</td>';
+                    table = table + '<td>' + reponse[i].ngayDang + '</td>';
+                    table = table + '<td>' + reponse[i].theLoaiTruyen + '</td>';
+                    table = table + '</tr>';
+                }
+
+                document.getElementById('truyen').innerHTML = table;
+            }
+        });
+    }
+</script>

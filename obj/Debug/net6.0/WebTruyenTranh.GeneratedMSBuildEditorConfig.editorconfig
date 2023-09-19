@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebTruyenTranh
+build_property.RootNamespace = WebTruyenTranh
+build_property.ProjectDir = C:\Users\thien vu\OneDrive\Documents\giao thong van tai\ki 2 nam 3\ttcm\webtruyentranh\WebTruyenTranh\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\thien vu\OneDrive\Documents\giao thong van tai\ki 2 nam 3\ttcm\webtruyentranh\WebTruyenTranh
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/ListChuong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXExpc3RDaHVvbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/ListTruyen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXExpc3RUcnV5ZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/ListUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXExpc3RVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/SuaChuong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YUNodW9uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/SuaTruyen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YVRydXllbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/SuaUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFN1YVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/ThemChuongMoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1DaHVvbmdNb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/ThemTruyenMoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1UcnV5ZW5Nb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/ThemUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFRoZW1Vc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/XoaChuong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFhvYUNodW9uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/HomeAdmin/XoaUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZUFkbWluXFhvYVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Areas/admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Access/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Access/ThemUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFRoZW1Vc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Home/ChiTietAnh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGlUaWV0QW5oLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Home/ChiTietTruyen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGlUaWV0VHJ1eWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Home/IndexAfterLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleEFmdGVyTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutAfterLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZnRlckxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutHinhAnh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIaW5oQW5oLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutTheLoai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUaGVMb2FpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutTopTruyen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUb3BUcnV5ZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutTruyenDeCu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUcnV5ZW5EZUN1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutTruyenTranh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUcnV5ZW5UcmFuaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thien vu/OneDrive/Documents/giao thong van tai/ki 2 nam 3/ttcm/webtruyentranh/WebTruyenTranh/Views/Shared/_LayoutChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDaGlUaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-acuvwbyduy
